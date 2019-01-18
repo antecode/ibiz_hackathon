@@ -1,0 +1,36 @@
+$(function() {
+$("input[name$='value']").click(function() {
+    var value = $(this).val();
+    if (value == 'M-pesa') {
+        window.location.assign("mpesa.php");
+    }
+    else if (value == 'CreditCard') {
+        window.location.assign("card.php");
+    }
+    else if (value == 'CasOnDelivery') {
+        window.location.assign("cod.php");
+    }
+});});
+
+<form>
+<input type="radio" name="value" value="google"><span>Google</span><br>
+<input type="radio" name="value" value="yahoo"><span>Yahoo</span><br>
+<input type="radio" name="value" value="bing"><span>Bing</span>\
+
+
+
+
+
+
+<form>
+<input type="radio" name="redirect" value="http://google.com"><span>Google</span><br>
+<input type="radio" name="redirect" value="http://yahoo.com"><span>Yahoo</span><br>
+<input type="radio" name="redirect" value="http://bing.com"><span>Bing</span>
+</form>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+$('input[type="radio"]').on('click', function() {
+     window.location = $(this).val();
+});
+</script>

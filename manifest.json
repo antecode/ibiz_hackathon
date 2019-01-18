@@ -1,0 +1,22 @@
+{
+	"name": "Kaduka Shop",
+	"short_name": "Kaduka",
+	"start_url": "index.php",
+	"display" : "standalone",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"theme_color": "#cccccc",
+	"icons" : [
+			{
+				"src": "icon1.png", "sizes": "143x143", "type": "image/png"
+			},
+
+			{
+				"src": "icon3.png", "sizes": "256x256", "type": "image/png"
+			},
+
+			{
+				"src": "icon2.png", "sizes": "512x512", "type": "image/png"
+			}
+			  ]  
+}
